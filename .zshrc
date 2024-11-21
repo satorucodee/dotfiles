@@ -15,8 +15,11 @@ export PATH="$PATH:/Applications/Visual Studio Code - Insiders.app/Contents/Reso
 # stow 
 export PATH=$PATH:/usr/local/bin
 
-# thefuck
+# ---- TheFuck -----
+
+# thefuck alias
 eval $(thefuck --alias)
+eval $(thefuck --alias fk)
 
 # neofetch
 neofetch
