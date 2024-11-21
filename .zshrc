@@ -12,11 +12,6 @@ alias python=/usr/bin/python3
 # Visual Studio Code Insiders
 export PATH="$PATH:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin"
 
-# starship pure preset
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
-autoload -U promptinit; promptinit
-prompt pure
-
 # stow 
 export PATH=$PATH:/usr/local/bin
 
