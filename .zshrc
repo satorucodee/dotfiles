@@ -21,6 +21,23 @@ export PATH=$PATH:/usr/local/bin
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
-# neofetch
-neofetch
+# ---- Pretty, minimal and fast ZSH prompt => PURE ---
+
+
+fpath+=($HOME/.zsh/pure)
+autoload -U promptinit; promptinit
+prompt pure
+zmodload zsh/nearcolor
+
+
+# ----- FZF ------
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# ----- CURSOR -----
+
+function cursor {
+  open -a "/Applications/Cursor.app" "$@"
+}
+
 
